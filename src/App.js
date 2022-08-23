@@ -10,10 +10,7 @@ function App () {
   return (
     <div className='App'>
       <nav className='demo'>
-        <a href='#' className='brand'>
-          <span>YGRR 🛩</span>
-        </a>
-
+      <Link to='/' className='pseudo button'> <span>YGRR 🛩</span></Link>
         <div className='menu'>
           <Link to='/' className='pseudo button'>Home</Link>
           <Link to='/about' className='pseudo button'>About</Link>
