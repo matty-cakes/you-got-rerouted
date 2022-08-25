@@ -5,7 +5,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -13,7 +14,7 @@ module.exports = {
     })
   ],
   devServer: {
-    historyApiFallback: true, 
+    historyApiFallback: true,
     static: {
       directory: path.join(__dirname, 'dist')
     },

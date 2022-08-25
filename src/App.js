@@ -1,31 +1,20 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from 'react'
-import Home from './Components/Home'
-import Contact from './Components/Contact'
-import FAQ from './Components/FAQ'
-import About from './Components/About'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function App () {
   return (
     <div className='App'>
       <nav className='demo'>
-      <Link to='/' className='pseudo button'> <span>YGRR 🛩</span></Link>
+        <Link to='/' className='pseudo button'> <span>YGRR 🛩</span></Link>
         <div className='menu'>
           <Link to='/' className='pseudo button'>Home</Link>
           <Link to='/about' className='pseudo button'>About</Link>
           <Link to='/contact' className='pseudo button'>Contact</Link>
           <Link to='/faq' className='pseudo button'>FAQ</Link>
+          <Link to='/cases' style={{ background: '#ff4136', color: 'white' }} className='pseudo button'>Cases 🔒</Link>
         </div>
-
       </nav>
-      {/* Pages Our App Has */}
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/faq' element={<FAQ />} />
-      </Routes>
     </div>
   )
 }

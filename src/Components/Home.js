@@ -10,7 +10,7 @@ function Home () {
       </header>
       <hr />
       <main>
-        <button class="error" onClick={(e) => { window.alert("Don't even sweat all your travel woes have been fixed 🦄") }}>I Got Re-Routed And I Am Mega Sad Help Me Now!</button>
+        <button class='error' onClick={(e) => { window.alert("Don't even sweat all your travel woes have been fixed 🦄") }}>I Got Re-Routed And I Am Mega Sad Help Me Now!</button>
       </main>
     </div>
   )
